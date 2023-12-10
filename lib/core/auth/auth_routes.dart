@@ -9,6 +9,7 @@ import 'package:thingsboard_app/core/context/tb_context.dart';
 import 'login/login_page.dart';
 
 class AuthRoutes extends TbRoutes {
+
   late var loginHandler = Handler(
       handlerFunc: (BuildContext? context, Map<String, dynamic> params) {
     return LoginPage(tbContext);

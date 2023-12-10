@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
@@ -23,6 +24,7 @@ class LoginPage extends TbPageWidget {
 }
 
 class _LoginPageState extends TbPageState<LoginPage> {
+
   final ButtonStyle _oauth2ButtonWithTextStyle = OutlinedButton.styleFrom(
       padding: EdgeInsets.all(16),
       alignment: Alignment.centerLeft,
@@ -39,6 +41,7 @@ class _LoginPageState extends TbPageState<LoginPage> {
   @override
   void initState() {
     super.initState();
+    FlutterNativeSplash.remove();
     if (tbClient.isPreVerificationToken()) {
       SchedulerBinding.instance.addPostFrameCallback((_) {
         navigateTo('/login/mfa');
