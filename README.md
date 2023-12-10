@@ -3,6 +3,9 @@ Powered by [ThingsBoard](https://thingsboard.io) IoT Platform
 
 Build your own IoT mobile application **with minimum coding efforts**
 
+
+flutter build apk --no-tree-shake-icons
+
 ## Resources
 
 - [Getting started](https://thingsboard.io/docs/mobile/getting-started/) - learn how to set up and run your first IoT mobile app

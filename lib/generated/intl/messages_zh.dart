@@ -36,7 +36,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "alarmClearTitle": MessageLookupByLibrary.simpleMessage("清除告警"),
         "alarms": MessageLookupByLibrary.simpleMessage("告警"),
         "allDevices": MessageLookupByLibrary.simpleMessage("所有设备"),
-        "appTitle": MessageLookupByLibrary.simpleMessage("Thingsboard"),
+        "appTitle": MessageLookupByLibrary.simpleMessage("SafeMe"),
         "assetName": MessageLookupByLibrary.simpleMessage("资产名"),
         "assignedToCustomer": MessageLookupByLibrary.simpleMessage("分配给客户"),
         "auditLogDetails": MessageLookupByLibrary.simpleMessage("审计日志详情"),

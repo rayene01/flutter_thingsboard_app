@@ -1,4 +1,5 @@
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:universal_platform/universal_platform.dart';
 
 import 'package:flutter/material.dart';
@@ -15,7 +16,8 @@ import 'generated/l10n.dart';
 final appRouter = ThingsboardAppRouter();
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
+  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 //  await FlutterDownloader.initialize();
 //  await Permission.storage.request();
 

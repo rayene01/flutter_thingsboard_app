@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:thingsboard_app/constants/assets_path.dart';
 import 'package:thingsboard_app/core/context/tb_context.dart';
@@ -9,6 +10,8 @@ import 'package:thingsboard_app/modules/dashboard/dashboards_grid.dart';
 import 'package:thingsboard_app/modules/tenant/tenants_widget.dart';
 import 'package:thingsboard_app/widgets/tb_app_bar.dart';
 import 'package:thingsboard_client/thingsboard_client.dart';
+
+import '../../generated/l10n.dart';
 
 class HomePage extends TbContextWidget {
   HomePage(TbContext tbContext) : super(tbContext);
@@ -22,6 +25,7 @@ class _HomePageState extends TbContextState<HomePage>
   @override
   void initState() {
     super.initState();
+    FlutterNativeSplash.remove();
   }
 
   @override
@@ -44,13 +48,7 @@ class _HomePageState extends TbContextState<HomePage>
         tbContext,
         elevation: dashboardState ? 0 : 8,
         title: Center(
-            child: Container(
-                height: 24,
-                child: SvgPicture.asset(ThingsboardImage.thingsBoardWithTitle,
-                    colorFilter: ColorFilter.mode(
-                        Theme.of(context).primaryColor, BlendMode.srcIn 
-                    ),
-                    semanticsLabel: 'ThingsBoard Logo'))),
+            child: Text(S().appTitle)),
         actions: [
           if (tbClient.isSystemAdmin())
             IconButton(

@@ -1,5 +1,5 @@
 {
-  "appTitle": "ThingsBoard",
+  "appTitle": "SafeMe",
 
   "home": "Home",
   "alarms": "Alarms",
@@ -25,7 +25,6 @@
   "passwordResetText": "Enter the email associated with your account and we'll send an email with password reset link",
   "requestPasswordReset": "Request password reset",
   "passwordResetLinkSuccessfullySentNotification": "Password reset link was successfully sent!",
-
   "OR": "OR",
   "No": "No",
   "Yes": "Yes",
@@ -74,7 +73,6 @@
   "newPassword2RequireText": "New password again is required.",
   "newPassword2Star": "New password again *",
   "passwordErrorNotification": "Entered passwords must be same!",
-
   "emailStar": "Email *",
   "firstName": "firstName",
   "firstNameUpper": "First Name",

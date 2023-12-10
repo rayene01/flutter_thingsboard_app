@@ -47,7 +47,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "alarmClearTitle": MessageLookupByLibrary.simpleMessage("Clear Alarm"),
         "alarms": MessageLookupByLibrary.simpleMessage("Alarms"),
         "allDevices": MessageLookupByLibrary.simpleMessage("All devices"),
-        "appTitle": MessageLookupByLibrary.simpleMessage("ThingsBoard"),
+        "appTitle": MessageLookupByLibrary.simpleMessage("SafeMe"),
         "assetName": MessageLookupByLibrary.simpleMessage("Asset name"),
         "assets": MessageLookupByLibrary.simpleMessage("Assets"),
         "assignedToCustomer":
