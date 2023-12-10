@@ -135,6 +135,7 @@ class ThingsboardAppState extends State<ThingsboardApp>
         statusBarColor: Colors.white,
         systemNavigationBarIconBrightness: Brightness.light));
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         localizationsDelegates: [
           S.delegate,
           GlobalMaterialLocalizations.delegate,
@@ -147,6 +148,7 @@ class ThingsboardAppState extends State<ThingsboardApp>
         home: TwoPageView(
             controller: _mainPageViewController,
             first: MaterialApp(
+              debugShowCheckedModeBanner: false,
               key: mainAppKey,
               scaffoldMessengerKey: appRouter.tbContext.messengerKey,
               localizationsDelegates: [
@@ -164,6 +166,7 @@ class ThingsboardAppState extends State<ThingsboardApp>
               navigatorObservers: [appRouter.tbContext.routeObserver],
             ),
             second: MaterialApp(
+              debugShowCheckedModeBanner: false,
               key: dashboardKey,
               // scaffoldMessengerKey: appRouter.tbContext.messengerKey,
               localizationsDelegates: [
